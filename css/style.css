@@ -53,6 +53,7 @@ body {
 /* //////////////////////// */
 .cart-row .pic {
     flex: 1;
+    position: relative;
 }
 
 .cart-row .pic span {
@@ -63,6 +64,22 @@ body {
     background-size: contain;
     margin-right: 10px;
     margin-top: 5px;
+}
+
+.cart-row .pic a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    color: #ff0000;
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    left: -8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .9);
+    border: 1px solid #ccc;
 }
 /* //////////////////////// */
 .cart-row .desc {
@@ -106,6 +123,12 @@ body {
 }
 
 /* ///////////////////// FOOTER /////////////////////*/
+.cart-container footer .totals {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 10px;
+}
+
 .cart-container footer {
     padding: 20px 0;
     text-align: center;
@@ -120,4 +143,5 @@ body {
     padding: 5px 20px;
     border: none;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+    margin-top: 20px;
 }
