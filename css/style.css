@@ -1,0 +1,123 @@
+html {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-image: linear-gradient(#d2d4dd, #1d1e26);
+}
+
+.container {
+    width: 500px;
+    margin: 100px auto;
+}
+
+.cart-container {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* ///////////////////// HEADER /////////////////////*/
+.cart-container header {
+    background-color: #026eb5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #fff;
+}
+
+.cart-container header h3 {
+    font-weight: normal;
+    padding: 10px 20px;
+}
+
+/* ///////////////////// CART BODY ///////////////////*/
+.cart-item {
+   / padding-top: 15px;
+}
+.cart-row {
+    display: flex;
+    padding: 0 20px;
+}
+
+.cart-row-cell {
+    border-bottom: 1px solid #000;
+    height: 50px;
+    padding: 10px 0;
+}
+/* //////////////////////// */
+.cart-row .pic {
+    flex: 1;
+}
+
+.cart-row .pic span {
+    width: 70px;
+    height: 50px;
+    display: inline-block;
+    background: url(../img/monitor.png) no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+/* //////////////////////// */
+.cart-row .desc {
+    flex: 3;
+}
+
+.cart-row .desc h5 {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.cart-row .desc p {
+    font-size: 0.8em;
+}
+/* //////////////////////// */
+.cart-row .quant {
+    flex: 1;
+}
+
+.cart-row .quant ul {
+    list-style: none;
+}
+
+.cart-row .quant li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.cart-row .quant li a {
+    text-decoration: none;
+    color: #000;
+}
+/* //////////////////////// */
+.cart-row .amount {
+    flex: 1;
+}
+
+.cart-row .amount p {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+/* ///////////////////// FOOTER /////////////////////*/
+.cart-container footer {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.cart-container footer button {
+    background-color: #026eb5;
+    border-radius:  5px;
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px 20px;
+    border: none;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+}
